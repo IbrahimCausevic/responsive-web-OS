@@ -1,0 +1,154 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+  background-image: url("wallpaper1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* This is for desktop navabr */
+.navbar {
+  position: fixed;
+  bottom: 1px;
+  display: flex;
+  justify-content: start;
+  font-weight: 600;
+  color: aqua;
+  background-color: rgba(31, 31, 31, 0.726);
+  padding: 1px;
+  margin: 5px;
+  border-radius: 15px;
+}
+.bottomNavbar {
+  display: none;
+}
+.navButton {
+  padding: 1%;
+  width: 2%;
+}
+.icon {
+  width: 100%;
+}
+/* This is for window */
+.windowTop {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  background-color: rgb(85, 85, 85);
+  margin-top: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.redDiv {
+  background-color: red;
+  border-radius: 50px;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+.redDiv:hover {
+  box-shadow: 0 0 30px 5px red;
+  transition: 0.5s;
+}
+.yellowDiv {
+  background-color: yellow;
+  border-radius: 50px;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.greenDiv {
+  background-color: green;
+  border-radius: 50px;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.caption {
+  color: white;
+  margin-left: 10px;
+}
+.window {
+  margin-top: 200px;
+  border-radius: 10px;
+  background-color: rgba(49, 49, 49, 0.678);
+  width: 700px;
+  height: 500px;
+  transition: 1s;
+  float: left;
+  margin-left: 70px;
+  display: inline;
+}
+/* this is for window's sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(85, 85, 85, 0.582);
+  width: fit-content;
+  padding: 4px;
+  height: 435px;
+  border-bottom-left-radius: 10px;
+  float: left;
+}
+.sideButton {
+  color: aqua;
+  padding: 10px;
+}
+.sideButtonActive {
+  color: aqua;
+  padding: 10px;
+  background-color: rgba(0, 89, 255, 0.219);
+  border-radius: 10px;
+}
+.file {
+  width: 6%;
+  padding: 15px;
+}
+/* responsive for mobile devices */
+@media (max-width: 800px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Courier New", Courier, monospace;
+    background-color: black;
+    background-image: url("wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  /* this is for mobile navbar */
+  .navbar {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    color: aqua;
+  }
+  .bottomNavbar {
+    position: fixed;
+    bottom: 1%;
+    width: 93%;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 600;
+    color: aqua;
+    background-color: rgba(31, 31, 31, 0.726);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px;
+  }
+  .navButton {
+    padding: 3%;
+    width: 15%;
+  }
+  .icon {
+    width: 100%;
+  }
+  /* This is window (app) for mobile */
+  .window {
+    display: none;
+  }
+}
